@@ -15,3 +15,6 @@ source "https://rubygems.org"
 #gem "sass"
 # gem "yui-compressor"
 gem "github-pages"
+gem 'jekyll-asset-pipeline'
+gem 'therubyracer'
+gem 'less'

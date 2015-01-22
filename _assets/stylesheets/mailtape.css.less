@@ -1,4 +1,4 @@
-@import "reference.less";
+@import "reference.css.less";
 
 body {
    font-size: 18px;
@@ -244,11 +244,11 @@ article {
 }
 
 // petite fonction pour faire ça propre
-.liMusicolor (@index:1,@color:@rough) {
-	&:nth-of-type(@index) {
+.liMusicolor (@index:1, @color:@rough) {
+	&:nth-of-type(@{index}) {
 		&:before {
-		color: @color;
-		font-family: 'icomoon';
+			color: @color;
+			font-family: 'icomoon';
 	  	content: "\e603";	
 		}	
 	}
@@ -256,7 +256,7 @@ article {
 
 // petite fonction pour faire ça propre
 .liIngredientColor (@index:1,@color:@rough) {
-	&:nth-of-type(@index) {
+	&:nth-of-type(@{index}) {
 		color: @color;
 		font-family: 'icomoon';	
 	}

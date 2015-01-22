@@ -19,8 +19,11 @@
 
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="/assets/stylesheets/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    {% css_asset_tag global %}
+        - /_assets/stylesheets/bootstrap.min.css
+    {% endcss_asset_tag %}
+
 
     <script type="text/javascript" src="//use.typekit.net/raj7qig.js"></script>
     <script type="text/javascript">
@@ -38,28 +41,26 @@
       <script type="text/javascript"></script>t src="../../assets/assets/javascripts/respond.min.js"></script>
       <![endif]-->
 
-    <link href="/assets/stylesheets/mailtape.css" rel="stylesheet" media="screen">
-    <link href="/assets/stylesheets/landing.css" rel="stylesheet" media="screen">
-    <link href="/assets/stylesheets/archive.css" rel="stylesheet" media="screen">
+    {% css_asset_tag global %}
+        - /_assets/stylesheets/mailtape.css.less
+        - /_assets/stylesheets/landing.css.less
+        - /_assets/stylesheets/archive.css.less
+    {% endcss_asset_tag %}
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-    <!-- dynamically-resized background image to any page or block level element. -->
-    <script type="text/javascript" src="/assets/javascripts/jquery.anystretch.min.js"></script>
-
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-   <script src="/assets/javascripts/bootstrap.min.js"></script>
-
-   <script src="/assets/javascripts/jquery.fittext.js"></script>
-
-   <script src="/assets/javascripts/flowtype.js"></script>
-
-   <script src="/assets/javascripts/landing.js"></script>
-   <script src="/assets/javascripts/archive.js"></script>
-
-   <script src="/assets/javascripts/jquery.ajaxchimp.js"></script>
-
+    {% javascript_asset_tag global %}
+        # dynamically-resized background image to any page or block level element.
+        - /_assets/javascripts/jquery.anystretch.min.js
+        - /_assets/javascripts/bootstrap.min.js
+        - /_assets/javascripts/jquery.fittext.js
+        - /_assets/javascripts/jquery.fittext.v.js
+        - /_assets/javascripts/flowtype.js
+        - /_assets/javascripts/landing.js
+        - /_assets/javascripts/archive.js
+        - /_assets/javascripts/jquery.ajaxchimp.js
+    {% endjavascript_asset_tag %}
 
     <script type="text/javascript">
     var _gaq = _gaq || [];

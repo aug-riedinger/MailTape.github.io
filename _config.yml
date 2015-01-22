@@ -327,3 +327,9 @@ prose:
           help: "Copy Paste your intro here, without links please"
           placeholder: "This morning, welcome on Dream Airlines. Our captain, Valentin Stip, will take us off to glowing masses of condensed sound vapor floating in the sky."
           type: "text"
+asset_pipeline:
+  bundle: false            # Default = true
+  compress: false          # Default = true
+  output_path: assets     # Default = assets
+  display_path: nil       # Default = nil
+  gzip: false             # Default = false
